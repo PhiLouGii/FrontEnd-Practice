@@ -1,0 +1,437 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #4f1515;
+  }
+
+  /* Navbar Styling */
+  .navbar {
+    background: linear-gradient(to right, #a50023, #4f1a27);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-logo {
+    color: white;
+    font-family: "Playfair Display Sc";
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-family: "Gideon Roman";
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #ffdce4;
+  }
+  
+  .hero {
+    background: linear-gradient(to bottom right, #4f1a27, #a50023, black);
+    color: white;
+    font-family: "Playfair Display SC";
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0 15px;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    opacity: 0;
+  }
+  
+  .tagline {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    opacity: 0;
+  }
+  
+  .cta-btn {
+    background: white;
+    color: #a50023;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Gideon Roman";
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .cta-btn:hover {
+    background: #a50023;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .bottle {
+    width: 100%;
+    max-width: 200px;
+    position: absolute;
+    bottom: -30px;
+    right: 50px;
+    opacity: 0;
+  }
+
+  #our-company {
+    background: linear-gradient(to top right, #ffdce4, #dc9eac);
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .company-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .info-company {
+    line-height: 30px;
+    font-family: "Gideon Roman";
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .lids {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* About Section */
+  .about {
+    margin-top: 30px;
+    padding-top: 20px;
+    background: linear-gradient(to bottom left, #ffdce4, #dc9eac);
+  }
+
+  .about-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .our-story {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+    font-family: "Gideon Roman";
+    font-weight: bold;
+    text-align: justify;
+  }
+
+  .can {
+    position: relative;
+    width: 200px;
+    height: auto;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  h2 {
+    font-family: "Playfair Display SC";
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  /* Products Section */
+  .products {
+    background: linear-gradient(to bottom left, #ffdce4, #dc9eac);
+    margin-top: 30px;
+    padding-left: 10px;
+    text-align: center;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  h3 {
+    font-family: "Playfair Display SC";
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .product-name {
+    font-family: "Gideon Roman";
+  }
+
+  .product-bottle {
+    height: 200px;
+    max-width: 100%;
+  }
+
+  .product-bottle:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  /* Sustainability Section */
+  .sustainability {
+    background: linear-gradient(to top left, #ffdce4, #dc9eac);
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-family: "Gideon Roman";
+  }
+
+  .sustainability-img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  /* Flavours Section */
+  .flavours {
+    background: linear-gradient(to bottom right, #ffdce4, #dc9eac);
+    margin-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: cursive;
+    text-align: center;
+  }
+
+  .coke-flavours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .flavour-img {
+    height: 100px;
+    max-width: 100%;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background: linear-gradient(to top left, #702436, #a50024db,#702436);
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    color: white;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  input[type="text"], 
+  input[type="email"], 
+  textarea {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input::placeholder, 
+textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+input:focus, 
+textarea:focus {
+  border-color: #4CAF50;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4f1515; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+
+button:hover {
+    background-color: #742828; 
+  }
+  
+
+  button {
+    margin-top: 10px;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+      max-width: 90%; /* Make the form smaller on mobile */
+    }
+  
+    input[type="text"], 
+    input[type="email"], 
+    textarea {
+      font-size: 14px; /* Adjust font size on smaller screens */
+    }
+  
+    button {
+      font-size: 14px; /* Adjust button size on smaller screens */
+    }
+  }
+
+  /* Footer Styling */
+  .footer {
+    background: linear-gradient(to right, #702436, #4f1a27);
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer p  {
+    margin: 0;
+    font-family: "Gideon Roman";
+  }
+
+  .footer-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+  }
+
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-family: "Gideon Roman";
+  }
+
+  .footer-links a:hover {
+    color: #ffdce4;
+  }
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    padding: 0 10px;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
+  .company-div, .about-div, .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-logo {
+    font-size: 20px;
+  }
+
+  .hero {
+    font-size: 1.5rem;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sustainability-img, .flavour-img {
+    height: 80px;
+  }
+
+  form {
+    padding: 15px;
+    max-width: 90%; /* Make the form smaller on mobile */
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    font-size: 14px;
+}
+
+button {
+    font-size: 14px;
+}
+}
+ 
