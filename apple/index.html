@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Clone</title>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+     <nav class="main-nav">
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="#" class="apple-logo"><i class="fab fa-apple"></i></a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">AirPods</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" id="cartIcon"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#" id="chatIcon"><i class="fas fa-comments"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+     <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title"><i class="fab fa-apple"></i> WATCH</h1>
+            <p class="hero-subtitle">Live healthier. Train better. Stay Connected</p>
+            <div>
+            <button class="watch-button"> Learn More</button>
+            <button class="watch-button"> Shop Watch</button>
+        </div>
+            <img class="watch" src="images/applewatch.png" alt="watch">
+        </div>
+    </section>
+
+     <!-- Products Grid -->
+     <section class="products">
+        <div class="product-grid">
+            <!-- Product cards -->
+            <div class="product-card">
+                <h1 class="product-title" >iPhone</h1>
+                <p class="product-subtitle" >Meet the iPhone 15 family.</p>
+                <button class="iphone-button1">Learn More</button>
+                <button class="iphone-button2">Shop iPhone</button>
+                <p class="product-info">Built for Apple Intelligence</p>
+                <img class="iphone15" src="images/iphone15.png" alt="iPhone">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Shop and Learn</h4>
+                <ul>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <!-- More links -->
+                </ul>
+            </div>
+            <!-- Repeat other footer sections -->
+        </div>
+    </footer>
+
+     <!-- Cart Sidebar -->
+     <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Bag</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be populated here -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span class="total-amount">$0.00</span>
+        </div>
+        <button class="checkout-button">Checkout</button>
+    </div>
+
+<!-- Chatbot -->
+<div class="chatbot-container" id="chatbotWindow">
+    <div class="chat-header">
+        <h3>Support Assistant</h3>
+        <button class="close-chat">&times;</button>
+    </div>
+    <div class="chat-messages">
+        <!-- Chat messages will appear here -->
+    </div>
+    <div class="chat-input">
+        <input type="text" placeholder="Type your message...">
+        <button class="send-button"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+<div class="chatbot-icon" id="chatbotTrigger">
+    <i class="fas fa-comment-dots"></i>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
